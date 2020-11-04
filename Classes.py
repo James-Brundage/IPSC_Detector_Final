@@ -1,16 +1,6 @@
 import pandas as pd
 import numpy as np
 import os
-from sklearn.utils import shuffle
-from sklearn.model_selection import train_test_split
-import tensorflow
-import keras
-from keras.models import Sequential
-from keras.wrappers.scikit_learn import KerasClassifier
-from keras.layers import Dense, Dropout, Flatten
-from keras.layers.convolutional import Conv2D, MaxPooling2D, MaxPooling1D, Conv1D
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import classification_report
 import seaborn as sns
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
@@ -18,12 +8,9 @@ from scipy import integrate
 from scipy.signal import find_peaks
 from scipy import signal
 import pyabf
-from tqdm import tqdm
-import pickle
-from Preprocessing import preprocessing
+
 
 test_file = '7_30_2019 264 Continuous Export.abf'
-
 
 class RecordingFile:
 
